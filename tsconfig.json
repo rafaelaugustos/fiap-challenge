@@ -1,0 +1,29 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "es2017",
+		"module": "commonjs",
+		"lib": ["es6"],
+		"allowJs": true,
+		"paths": {
+			"@/*": ["./*"]
+		},
+		"outDir": "./dist",
+		"rootDir": "./",
+		"removeComments": true,
+		"typeRoots": ["./node_modules/@types", "./app/@types"],
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"sourceMap": false,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true
+	},
+	"include": ["**/*.ts"],
+	"exclude": ["./node_modules", "**/*.spec.ts"]
+}
