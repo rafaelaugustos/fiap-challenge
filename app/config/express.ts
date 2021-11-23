@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 
-// import files from '@/app/api/routes/files'
+import auth from '@/app/api/routes/auth'
 
 export default () => {
 	const app = express()
@@ -13,7 +13,7 @@ export default () => {
 
 	app.use(express.static('public'))
 
-	// files(app)
+	auth(app)
 
 	return app
 }
