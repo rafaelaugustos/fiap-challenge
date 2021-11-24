@@ -20,7 +20,7 @@
 
     <nuxt-link class="text-brand-white mt-6 m-auto" to="/register"
       >Não tem conta cadastrada ainda?
-      <span class="text-brand-primary">Entrar</span></nuxt-link
+      <span class="text-brand-primary">Cadastrar</span></nuxt-link
     >
   </Container>
 </template>
