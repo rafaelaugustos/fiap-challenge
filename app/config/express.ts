@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 
 import auth from '@/app/api/routes/auth'
+import places from '@/app/api/routes/places'
 
 export default () => {
 	const app = express()
@@ -14,6 +15,7 @@ export default () => {
 	app.use(express.static('public'))
 
 	auth(app)
+	places(app)
 
 	return app
 }
