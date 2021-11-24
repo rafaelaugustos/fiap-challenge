@@ -1,7 +1,7 @@
-import Axios from "axios"
+import axios from 'axios'
 
-const service =Axios.create({
-  baseURL: "http://localhost:3000"
+const service = axios.create({
+  baseURL: 'http://159.203.114.77:3000/',
 })
 
 export default service

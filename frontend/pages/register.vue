@@ -25,13 +25,13 @@
       <Button class="mt-8 mb-4">Cadastrar</Button>
     </form>
 
-    <nuxt-link class="text-gray-400 mt-6 m-auto" to="/login"
-      >Voltar</nuxt-link
-    >
+    <nuxt-link class="text-gray-400 mt-6 m-auto" to="/login">Voltar</nuxt-link>
   </Container>
 </template>
 
 <script>
+import { Register } from '@/services/api'
+
 export default {
   name: 'Register',
 
@@ -46,8 +46,13 @@ export default {
   },
 
   methods: {
-    register() {
-      console.log(this.form)
+    async register() {
+      try {
+        await Register(this.form)
+        this.$router.push('/')
+      } catch (e) {
+        console.log(e)
+      }
     },
   },
 }
